@@ -1,59 +1,121 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🔐 Sistem Login Laravel 12 (Role Admin & User)
 
-## About Laravel
+Proyek ini merupakan **sistem login sederhana berbasis Laravel 12** dengan fitur **multi-role** (`admin` dan `user`), serta tampilan modern menggunakan **Bootstrap 5**.  
+Didesain agar mudah dipahami dan bisa dijadikan dasar untuk pengembangan aplikasi web yang lebih kompleks.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Fitur Utama
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- ✅ Register akun baru dengan pemilihan **role (admin / user)**
+- ✅ Login & Logout menggunakan **Laravel Auth**
+- ✅ Redirect otomatis sesuai role:
+  - `admin` → menuju `/admin/dashboard`
+  - `user` → menuju `/user/dashboard`
+- ✅ Tampilan **responsive** di semua perangkat (mobile, tablet, desktop)
+- ✅ Menggunakan **Bootstrap 5** tanpa layout tambahan
+- ✅ Validasi input register & login
+- ✅ Logout dengan metode POST (aman & sesuai standar Laravel)
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🛠️ Teknologi yang Digunakan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| Komponen | Versi | Keterangan |
+|-----------|--------|-------------|
+| Laravel | 12.x | Framework utama |
+| PHP | 8.3+ | Bahasa backend |
+| Bootstrap | 5.3 | Tampilan frontend |
+| MySQL | 8.x | Database utama |
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## ⚙️ Instalasi & Konfigurasi
 
-### Premium Partners
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/username/nama-project.git
+   cd nama-project
+2. **Install Dependencies**
+   ```bash
+   composer install
+3. **Salin File Environment**
+   ```bash
+   cp .env.example .env
+4. **Atur Konfigurasi Database di .env**
+   ```bash
+   DB_DATABASE=db_login
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+5. **Generate Key**
+   ```bash
+   php artisan key:generate
+6. **Jalankan Migrasi**
+   ```bash
+   php artisan migrate
+7. **Jalankan Server**
+   ```bash
+   php artisan serve
+8. **Bukan di browser**
+   ```bash
+   http://localhost:8000
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 👥 Struktur Role Pengguna
+| Role  | Deskripsi                                                 | Akses                           |
+| ----- | --------------------------------------------------------- | ------------------------------- |
+| Admin | Pengguna dengan akses penuh ke halaman `/admin/dashboard` | Semua data & kontrol sistem     |
+| User  | Pengguna biasa                                            | Hanya halaman `/user/dashboard` |
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🧩 Struktur Folder Utama
+```bash
+app/
+ ├── Http/
+ │   ├── Controllers/
+ │   │   └── AuthController.php
+ │   └── Middleware/
+ │       └── RoleMiddleware.php
+resources/
+ └── views/
+     ├── admin
+         ├── dashboard.blade.php
+     ├── user
+         ├── dashboard.blade.php   
+     ├── login.blade.php
+     ├── register.blade.php
+routes/
+ └── web.php
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 📸 Tampilan Halaman
+- register
+  ![Tampilan Register](public/images/register.png)
+- login
+  ![Tampilan Login](public/images/login.png)
+- dashboard admin
+  ![Tampilan Dashboard Admin](public/images/dashboardAdmin.png)
+- dashboard user
+  ![Tampilan Dashboard User](public/images/dashboardUser.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+--- 
 
-## License
+# 🤝 Kontribusi
+- Fork repo ini
+- Buat branch baru (feature/nama-fitur)
+- Commit perubahanmu
+- Push ke branch
+- Buat Pull Request
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 📞 Kontak
+### 📧 Email: adammiftah196@gmail.com
+### 🌐 Website: www.adammiftah.com
