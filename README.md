@@ -23,12 +23,12 @@ Didesain agar mudah dipahami dan bisa dijadikan dasar untuk pengembangan aplikas
 
 ## 🛠️ Teknologi yang Digunakan
 
-| Komponen | Versi | Keterangan |
-|-----------|--------|-------------|
-| Laravel | 12.x | Framework utama |
-| PHP | 8.3+ | Bahasa backend |
-| Bootstrap | 5.3 | Tampilan frontend |
-| MySQL | 8.x | Database utama |
+| Komponen | Versi |
+|-----------|--------|
+| Laravel | 129.1 |
+| PHP | 8.3.20 |
+| Bootstrap, Blade | 5.3 |
+| MySQL | 8.0.30 | 
 
 ---
 
