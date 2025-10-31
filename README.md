@@ -97,17 +97,16 @@ routes/
 
 ## 📸 Tampilan Halaman
 ### REGISTER
-
-  ![Tampilan Register](public/images/register.png)
+    ![Tampilan Register](public/images/register.png)
 
 ### LOGIN
-  ![Tampilan Login](public/images/login.png)
+    ![Tampilan Login](public/images/login.png)
 
 ### DASHBOARD ADMIN
-#### ![Tampilan Dashboard Admin](public/images/dashboardAdmin.png)
+    ![Tampilan Dashboard Admin](public/images/dashboardAdmin.png)
 
 ### DASHBOARD USER
-#### ![Tampilan Dashboard User](public/images/dashboardUser.png)
+    ![Tampilan Dashboard User](public/images/dashboardUser.png)
 
 --- 
 
