@@ -96,13 +96,17 @@ routes/
 ---
 
 ## 📸 Tampilan Halaman
-- register
+### REGISTER
+
   ![Tampilan Register](public/images/register.png)
-- login
+
+### LOGIN
   ![Tampilan Login](public/images/login.png)
-- dashboard admin
+
+### DASHBOARD ADMIN
   ![Tampilan Dashboard Admin](public/images/dashboardAdmin.png)
-- dashboard user
+
+### DASHBOARD USER
   ![Tampilan Dashboard User](public/images/dashboardUser.png)
 
 --- 
@@ -119,3 +123,5 @@ routes/
 ## 📞 Kontak
 ### 📧 Email: adammiftah196@gmail.com
 ### 🌐 Website: www.adammiftah.com
+### ![TikTok Logo](https://upload.wikimedia.org/wikipedia/en/6/69/TikTok_logo.svg) Tiktok: adammiftah
+### ![Instagram Logo](https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png) Instagram: _adammiftah
