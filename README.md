@@ -25,7 +25,7 @@ Didesain agar mudah dipahami dan bisa dijadikan dasar untuk pengembangan aplikas
 
 | Komponen | Versi |
 |-----------|--------|
-| Laravel | 129.1 |
+| Laravel | 12.9.1 |
 | PHP | 8.3.20 |
 | Bootstrap, Blade | 5.3 |
 | MySQL | 8.0.30 | 
@@ -104,10 +104,10 @@ routes/
   ![Tampilan Login](public/images/login.png)
 
 ### DASHBOARD ADMIN
-  ![Tampilan Dashboard Admin](public/images/dashboardAdmin.png)
+#### ![Tampilan Dashboard Admin](public/images/dashboardAdmin.png)
 
 ### DASHBOARD USER
-  ![Tampilan Dashboard User](public/images/dashboardUser.png)
+#### ![Tampilan Dashboard User](public/images/dashboardUser.png)
 
 --- 
 
