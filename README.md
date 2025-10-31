@@ -122,5 +122,5 @@ routes/
 ## 📞 Kontak
 ### <img src="https://cdn.simpleicons.org/gmail/EA4335" width="20"/> Email **[adammiftah196@gmail.com](mailto:adammiftah196@gmail.com)**
 ### <img src="https://cdn.simpleicons.org/googlechrome/4285F4" width="20"/> Website **[www.adammiftah.com](https://www.adammiftah.com)**
-### <img src="https://cdn.simpleicons.org/tiktok/000000" width="20"/> TikTok **[@adammiftah](https://www.tiktok.com/@adammiftah)**
+### <img src="https://cdn.simpleicons.org/tiktok/000000" width="20"/> TikTok **[@adammiftah](https://www.tiktok.com/@_adammiftah)**
 ### <img src="https://cdn.simpleicons.org/instagram/E4405F" width="20"/> Instagram **[_adammiftah](https://www.instagram.com/_adammiftah)**
